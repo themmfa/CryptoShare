@@ -18,13 +18,18 @@ struct Login: View {
     }
 
     var body: some View {
-        VStack(spacing: 8) {
-            CustomUserInput(text: $email, title: "Email", placeholder: "Enter your email")
-            CustomUserInput(text: $password, title: "Password", placeholder: "Enter your password")
-            CustomButton(action: {}, label: "Login", isDisabled: authenticationViewModel.isButtonDisabled(email, password))
+        VStack {
+            VStack(spacing: 8) {
+                CustomUserInput(text: $email, title: "Email", placeholder: "Enter your email")
+                CustomUserInput(text: $password, title: "Password", placeholder: "Enter your password")
+                CustomButton(action: {}, label: "Login", isDisabled: authenticationViewModel.isLoginButtonDisabled(email, password))
+            }
+            .padding([.top], 200)
+            Spacer()
+            Button {} label: {
+                AttributedString(firstPart: "Do you have account?", secondPart: " Go to Register")
+            }
         }
-        Spacer()
-        Text("DENEMESDF")
     }
 }
 

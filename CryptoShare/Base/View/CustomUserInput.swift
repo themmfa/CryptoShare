@@ -25,6 +25,7 @@ struct CustomUserInput: View {
                 .cornerRadius(10)
                 .tint(.black)
                 .textInputAutocapitalization(TextInputAutocapitalization.never)
+                .autocorrectionDisabled()
         }
         .padding([.leading, .trailing], 16)
     }

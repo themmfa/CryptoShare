@@ -19,6 +19,8 @@
 		852794322A45790500556FA7 /* CustomUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794312A45790500556FA7 /* CustomUserInput.swift */; };
 		8527943A2A45827A00556FA7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794392A45827A00556FA7 /* Login.swift */; };
 		8527943C2A4582A400556FA7 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527943B2A4582A400556FA7 /* AuthenticationViewModel.swift */; };
+		852794452A458AE600556FA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 852794442A458AE600556FA7 /* GoogleService-Info.plist */; };
+		852794472A458C5D00556FA7 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794462A458C5D00556FA7 /* AttributedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		852794392A45827A00556FA7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		8527943B2A4582A400556FA7 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		8527943F2A458A7B00556FA7 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		852794442A458AE600556FA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		852794462A458C5D00556FA7 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		852794022A4572B900556FA7 /* CryptoShare */ = {
 			isa = PBXGroup;
 			children = (
+				852794442A458AE600556FA7 /* GoogleService-Info.plist */,
 				852794122A45731E00556FA7 /* Base */,
 				852794112A45731700556FA7 /* Feature */,
 				852794032A4572B900556FA7 /* CryptoShareApp.swift */,
@@ -148,6 +153,7 @@
 			children = (
 				8527942F2A4575C100556FA7 /* CustomButton.swift */,
 				852794312A45790500556FA7 /* CustomUserInput.swift */,
+				852794462A458C5D00556FA7 /* AttributedString.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 			files = (
 				8527940B2A4572BA00556FA7 /* Preview Assets.xcassets in Resources */,
 				852794082A4572BA00556FA7 /* Assets.xcassets in Resources */,
+				852794452A458AE600556FA7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,7 @@
 				8527943C2A4582A400556FA7 /* AuthenticationViewModel.swift in Sources */,
 				8527942D2A4575A000556FA7 /* AuthenticationService.swift in Sources */,
 				852794042A4572B900556FA7 /* CryptoShareApp.swift in Sources */,
+				852794472A458C5D00556FA7 /* AttributedString.swift in Sources */,
 				8527943A2A45827A00556FA7 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 import Foundation
 
 class AuthenticationViewModel: ObservableObject {
-    func isButtonDisabled(_ email: String, _ password: String) -> Bool {
+    func isLoginButtonDisabled(_ email: String, _ password: String) -> Bool {
         if email.isEmpty || password.isEmpty {
             return true
         }
