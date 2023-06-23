@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct CryptoShareApp: App {
+    var authenticationViewModel = AuthenticationViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Login(authenticationViewModel: authenticationViewModel)
         }
     }
 }

@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		852794042A4572B900556FA7 /* CryptoShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794032A4572B900556FA7 /* CryptoShareApp.swift */; };
-		852794062A4572B900556FA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794052A4572B900556FA7 /* ContentView.swift */; };
 		852794082A4572BA00556FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852794072A4572BA00556FA7 /* Assets.xcassets */; };
 		8527940B2A4572BA00556FA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8527940A2A4572BA00556FA7 /* Preview Assets.xcassets */; };
+		852794212A4574EF00556FA7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 852794202A4574EF00556FA7 /* FirebaseAuth */; };
+		852794232A4574EF00556FA7 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 852794222A4574EF00556FA7 /* FirebaseDatabase */; };
+		852794252A4574EF00556FA7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 852794242A4574EF00556FA7 /* FirebaseFirestore */; };
+		852794272A4574EF00556FA7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 852794262A4574EF00556FA7 /* FirebaseStorage */; };
+		8527942D2A4575A000556FA7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527942C2A4575A000556FA7 /* AuthenticationService.swift */; };
+		852794302A4575C100556FA7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527942F2A4575C100556FA7 /* CustomButton.swift */; };
+		852794322A45790500556FA7 /* CustomUserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794312A45790500556FA7 /* CustomUserInput.swift */; };
+		8527943A2A45827A00556FA7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852794392A45827A00556FA7 /* Login.swift */; };
+		8527943C2A4582A400556FA7 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527943B2A4582A400556FA7 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		852794002A4572B900556FA7 /* CryptoShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		852794032A4572B900556FA7 /* CryptoShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoShareApp.swift; sourceTree = "<group>"; };
-		852794052A4572B900556FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		852794072A4572BA00556FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8527940A2A4572BA00556FA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8527942C2A4575A000556FA7 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		8527942F2A4575C100556FA7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		852794312A45790500556FA7 /* CustomUserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserInput.swift; sourceTree = "<group>"; };
+		852794392A45827A00556FA7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		8527943B2A4582A400556FA7 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		8527943F2A458A7B00556FA7 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				852794232A4574EF00556FA7 /* FirebaseDatabase in Frameworks */,
+				852794272A4574EF00556FA7 /* FirebaseStorage in Frameworks */,
+				852794212A4574EF00556FA7 /* FirebaseAuth in Frameworks */,
+				852794252A4574EF00556FA7 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +68,12 @@
 		852794022A4572B900556FA7 /* CryptoShare */ = {
 			isa = PBXGroup;
 			children = (
+				852794122A45731E00556FA7 /* Base */,
+				852794112A45731700556FA7 /* Feature */,
 				852794032A4572B900556FA7 /* CryptoShareApp.swift */,
-				852794052A4572B900556FA7 /* ContentView.swift */,
 				852794072A4572BA00556FA7 /* Assets.xcassets */,
 				852794092A4572BA00556FA7 /* Preview Content */,
+				8527943F2A458A7B00556FA7 /* .gitignore.md */,
 			);
 			path = CryptoShare;
 			sourceTree = "<group>";
@@ -65,6 +84,105 @@
 				8527940A2A4572BA00556FA7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		852794112A45731700556FA7 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				852794352A45822400556FA7 /* Authentication */,
+				852794182A45739C00556FA7 /* Register */,
+				852794172A45739200556FA7 /* Login */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		852794122A45731E00556FA7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8527942E2A4575AB00556FA7 /* View */,
+				8527942B2A45758F00556FA7 /* Service */,
+				852794132A45732A00556FA7 /* Constants */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		852794132A45732A00556FA7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		852794172A45739200556FA7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8527942A2A45755300556FA7 /* Screen */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		852794182A45739C00556FA7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8527942A2A45755300556FA7 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		8527942B2A45758F00556FA7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8527942C2A4575A000556FA7 /* AuthenticationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8527942E2A4575AB00556FA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8527942F2A4575C100556FA7 /* CustomButton.swift */,
+				852794312A45790500556FA7 /* CustomUserInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		852794352A45822400556FA7 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				852794382A45825F00556FA7 /* Screen */,
+				852794372A45823800556FA7 /* ViewModel */,
+				852794362A45823300556FA7 /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		852794362A45823300556FA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		852794372A45823800556FA7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8527943B2A4582A400556FA7 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		852794382A45825F00556FA7 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				852794392A45827A00556FA7 /* Login.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +201,12 @@
 			dependencies = (
 			);
 			name = CryptoShare;
+			packageProductDependencies = (
+				852794202A4574EF00556FA7 /* FirebaseAuth */,
+				852794222A4574EF00556FA7 /* FirebaseDatabase */,
+				852794242A4574EF00556FA7 /* FirebaseFirestore */,
+				852794262A4574EF00556FA7 /* FirebaseStorage */,
+			);
 			productName = CryptoShare;
 			productReference = 852794002A4572B900556FA7 /* CryptoShare.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 852793F72A4572B900556FA7;
+			packageReferences = (
+				8527941F2A4574EF00556FA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 852794012A4572B900556FA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852794062A4572B900556FA7 /* ContentView.swift in Sources */,
+				852794302A4575C100556FA7 /* CustomButton.swift in Sources */,
+				852794322A45790500556FA7 /* CustomUserInput.swift in Sources */,
+				8527943C2A4582A400556FA7 /* AuthenticationViewModel.swift in Sources */,
+				8527942D2A4575A000556FA7 /* AuthenticationService.swift in Sources */,
 				852794042A4572B900556FA7 /* CryptoShareApp.swift in Sources */,
+				8527943A2A45827A00556FA7 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +470,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8527941F2A4574EF00556FA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		852794202A4574EF00556FA7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8527941F2A4574EF00556FA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		852794222A4574EF00556FA7 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8527941F2A4574EF00556FA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		852794242A4574EF00556FA7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8527941F2A4574EF00556FA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		852794262A4574EF00556FA7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8527941F2A4574EF00556FA7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 852793F82A4572B900556FA7 /* Project object */;
 }
